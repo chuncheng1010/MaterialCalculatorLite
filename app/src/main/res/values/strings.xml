@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Material Weight Calculator LITE</string>
+
+    <string name="app_name_original">* PAVING CALCULATOR *</string>
+    <string name="app_url">https://play.google.com/store/apps/details?id=</string>
+
+    <string name="email1">support@apps4builders.com</string>
+    <string name="about">http://apps4builders.com</string>
+    <string name="contact_us">http://apps4builders.com</string>
+    <string name="twitter_link">http://twitter.com/apps4builders</string>
+    <string name="trade_people_search">http://apps4builders.com</string>
+    <string name="supplier_search">http://apps4builders.com</string>
+
+    <string name="create_table_sql">\n		CREATE TABLE IF NOT EXISTS settings(unit INT);\n		CREATE TABLE IF NOT EXISTS notes(id integer primary key autoincrement,date TEXT,note TEXT);\n		\nCREATE TABLE IF NOT EXISTS jobs(date TEXT PRIMARY KEY,name TEXT,address TEXT,phone TEXT,email TEXT,l1 INT,w1 INT,l2 INT,w2 INT)\n		\nCREATE TABLE IF NOT EXISTS jobstable(id integer primary key autoincrement,date TEXT,name TEXT,address TEXT,phone TEXT,email TEXT,quote TEXT,method TEXT,option TEXT,shape TEXT,value TEXT,param1 TEXT,param2 TEXT,param3 TEXT,param4 TEXT,param5 TEXT,margin TEXT,tax TEXT,title TEXT)\n		</string>
+
+    <string name="google_admov_unit_id">ca-app-pub-6892657406793566/9689589566</string>
+
+    <string name="folders">Folders</string>
+    <string name="guides">Guides</string>
+    <string name="start">Start</string>
+
+    <string name="calculations">Calculations</string>
+    <string name="notes">Notes</string>
+    <string name="questions">Questions</string>
+
+    <string name="manual">Manual</string>
+    <string name="safety">Safety</string>
+    <string name="tools">Tools</string>
+
+    <string name="press_for_calculator">Press for Calculator Answers</string>
+
+    <string name="calculation_answers">Calculation Answers</string>
+    <string name="volume_weight">Volume &amp; Weights</string>
+
+    <!-- Calculation Basic Activity -->
+    <string name="material_weights">Material - Weights</string>
+
+    <string-array name="type_array">
+        <item>Metric M&#179;</item>
+        <item>Imperial FT&#179;</item>
+    </string-array>
+    
+    <string-array name="material_name_array">
+        <!-- first -->
+        <item>"Liquid - Acid"</item>
+        <item>"Liquid - Acetone"</item>
+        <item>"Liquid - Alcohol"</item>
+        <item>"Liquid - Ammonia"</item>
+        <item>"Liquid - Analine"</item>
+        <item>"Liquid - Beer"</item>
+        <item>"Liquid - Benzene"</item>
+        <item>"Liquid - Butane"</item>
+        <item>"Liquid - Castor Oil"</item>
+        <item>"Liquid - Chloride"</item>
+        <item>"Liquid - Chloroform"</item>
+        <item>"Liquid - Citric Acid"</item>
+        <item>"Liquid - Coconut Oil"</item>
+        <item>"Liquid - Crude Oil"</item>
+        <item>"Liquid - Diesel Fuel"</item>
+        <item>"Liquid - Ethane"</item>
+        <item>"Liquid - Gasoline"</item>
+        <item>"Liquid - Keresone"</item>
+        <item>"Liquid - Linseed Oil"</item>
+        <item>"Liquid - Methane"</item>
+        <item>"Liquid - Methanol"</item>
+        <item>"Liquid - Motor Oil"</item>
+        <item>"Liquid - Milk"</item>
+        <item>"Liquid - Olive Oil"</item>
+        <item>"Liquid - Oxygen"</item>
+
+        <!-- second -->
+        <item>"Liquid - Petrol"</item>
+        <item>"Liquid - Propane"</item>
+        <item>"Liquid - Sea Water"</item>
+        <item>"Liquid - Sodium Hydroxide"</item>
+        <item>"Liquid - Sulphuric Acid"</item>
+        <item>"Liquid - Sunflower Oil"</item>
+        <item>"Liquid - Water"</item>
+        <item>"Metal - Aluminium"</item>
+        <item>"Metal - Brass"</item>
+        <item>"Metal - Bronze"</item>
+        <item>"Metal - Cast Iron"</item>
+        <item>"Metal - Colbolt"</item>
+        <item>"Metal - Copper"</item>
+        <item>"Metal - Gold"</item>
+        <item>"Metal - Lead"</item>
+        <item>"Metal - Magnesium"</item>
+        <item>"Metal - Mercury"</item>
+        <item>"Metal - Nickel"</item>
+        <item>"Metal - Platinum"</item>
+        <item>"Metal - Plutonium"</item>
+        <item>"Metal - Silver"</item>
+        <item>"Metal - Steel"</item>
+        <item>"Metal - Tin"</item>
+        <item>"Metal - Titanium"</item>
+        <item>"Metal - Tungsten"</item>
+
+        <!-- third -->
+        <item>"Metal - Uranium"</item>
+        <item>"Metal - Vanadium"</item>
+        <item>"Metal - Zinc"</item>
+        <item>"Other - Aggregates / Blue Metal"</item>
+        <item>"Other - Aggregates / Road Base"</item>
+        <item>"Other - Aggregates / Recycled"</item>
+        <item>"Other - Aggregates / Crusher Dust"</item>
+        <item>"Other - Aggregates / River Gravel"</item>
+        <item>"Other - Asbestos"</item>
+        <item>"Other - Asphalt"</item>
+        <item>"Other - Bitumen"</item>
+        <item>"Other - Cardboard"</item>
+        <item>"Other - Common Bricks"</item>
+        <item>"Other - Cement / Portland"</item>
+        <item>"Other - Clay / Dry"</item>
+        <item>"Other - Clay / Wet"</item>
+        <item>"Other - Coal / Broken"</item>
+        <item>"Other - Coal / Solid"</item>
+        <item>"Other - Concrete / NOT reinforced"</item>
+        <item>"Other - Cork / Normal"</item>
+        <item>"Other - Cork / Compressed"</item>
+        <item>"Other - Decorative Gravels / Scoria"</item>
+        <item>"Other - Decorative Gravels / Granite"</item>
+        <item>"Other - Decorative Gravels / General"</item>
+        <item>"Other - Fibre Cement Sheet / Uncompressed"</item>
+        <item>"Other - Fibre Cement Sheet / Compressed"</item>
+        <item>"Other - Fibre Cement Sheet / Fire Resistant Lining Sheet"</item>
+        <item>"Other - Fibre Cement Sheet / Insulating Sheet"</item>
+        <item>"Other - Garbage / Household Waste"</item>
+        <item>"Other - Glass Window / Soda / Lime"</item>
+        <item>"Other - Granite / Basalt / Trachyte"</item>
+        <item>"Other - Gravel"</item>
+        <item>"Other - Ice / Crushed"</item>
+
+        <!-- fourth -->
+        <item>"Other - Ice / Solid"</item>
+        <item>"Other - Landscaping Soil / Garden Mix"</item>
+        <item>"Other - Landscaping Soil / Lawn Builder"</item>
+        <item>"Other - Landscaping Soil / Turf Underlay"</item>
+        <item>"Other - Landscaping Soil / Top Soil"</item>
+        <item>"Other - Leather"</item>
+        <item>"Other - Limestone / Dense"</item>
+        <item>"Other - Limestone / General"</item>
+        <item>"Other - Marble"</item>
+        <item>"Other - Mortar / Cement Mix"</item>
+        <item>"Other - Mulch / Redwood Chip"</item>
+        <item>"Other - Mulch / Pine Bark Mulch"</item>
+        <item>"Other - Mulch / Cypress Mulch"</item>
+        <item>"Other - Mulch / Eucalyptus Mulch"</item>
+        <item>"Other - Mulch / Leaf Mulch"</item>
+        <item>"Other - Paper"</item>
+        <item>"Other - Plaster"</item>
+        <item>"Other - Sandstone"</item>
+        <item>"Other - Sand / Brickies"</item>
+        <item>"Other - Sand / General Dry"</item>
+        <item>"Other - Sand / General Wet"</item>
+        <item>"Other - Sand / River"</item>
+        <item>"Other - Sand / Sydney"</item>
+        <item>"Other - Sand / Fill"</item>
+        <item>"Other - Sugar"</item>
+        <item>"Other - Tar"</item>
+        <item>"Other - Turf"</item>
+        <item>"Other - Wool"</item>
+        <item>"Timber - Ash"</item>
+        <item>"Timber - Bamboo"</item>
+        <item>"Timber - Blackbutt"</item>
+        <item>"Timber - CD Structural Plywood"</item>
+        <item>"Timber - Cypress Pine / Australian"</item>
+        <item>"Timber - Douglas Fir"</item>
+        <item>"Timber - Grey Gum"</item>
+        <item>"Timber - Grey Ironbark"</item>
+        <item>"Timber - Hoop"</item>
+
+        <!-- fifth -->
+        <item>"Timber - Jarrah"</item>
+        <item>"Timber - Maple"</item>
+        <item>"Timber - Marine Plywood"</item>
+        <item>"Timber - MDF"</item>
+        <item>"Timber - Particle Board"</item>
+        <item>"Timber - Radiata Pine / Australian"</item>
+        <item>"Timber - Radiata Pine / New Zealand"</item>
+        <item>"Timber - Redwood"</item>
+        <item>"Timber - Spotted Gum"</item>
+        <item>"Timber - Tallow Wood"</item>
+        <item>"Timber - Teak"</item>
+        <item>"Timber - Turpentine"</item>
+        <item>"Timber - T&amp;G Particle Board Flooring"</item>
+        <item>"Timber - Vic Ash"</item>
+        <item>"Timber - White Mahogany"</item>
+        <item>"Timber - Willow"</item>
+    </string-array>
+
+    <string-array name="material_metric_density_array">
+        <!-- first -->
+        <item>1050</item>
+        <item>785</item>
+        <item>786</item>
+        <item>825</item>
+        <item>1018</item>
+        <item>1010</item>
+        <item>873</item>
+        <item>599</item>
+        <item>956</item>
+        <item>1559</item>
+        <item>1477</item>
+        <item>1659</item>
+        <item>924</item>
+        <item>873</item>
+        <item>885</item>
+        <item>570</item>
+        <item>724</item>
+        <item>818</item>
+        <item>929</item>
+        <item>464</item>
+        <item>791</item>
+        <item>910</item>
+        <item>1035</item>
+        <item>860</item>
+        <item>1140</item>
+
+        <!-- second -->
+        <item>737</item>
+        <item>583</item>
+        <item>1025</item>
+        <item>1250</item>
+        <item>1839</item>
+        <item>920</item>
+        <item>1000</item>
+        <item>2670</item>
+        <item>8350</item>
+        <item>8150</item>
+        <item>7070</item>
+        <item>8750</item>
+        <item>8630</item>
+        <item>19320</item>
+        <item>11100</item>
+        <item>1740</item>
+        <item>13590</item>
+        <item>8800</item>
+        <item>21400</item>
+        <item>19800</item>
+        <item>10490</item>
+        <item>7690</item>
+        <item>7280</item>
+        <item>4500</item>
+        <item>19600</item>
+
+        <!-- third -->
+        <item>18900</item>
+        <item>5494</item>
+        <item>7000</item>
+        <item>1450</item>
+        <item>1750</item>
+        <item>1800</item>
+        <item>2100</item>
+        <item>1550</item>
+        <item>360</item>
+        <item>2120</item>
+        <item>1200</item>
+        <item>689</item>
+        <item>1922</item>
+        <item>1506</item>
+        <item>1089</item>
+        <item>1826</item>
+        <item>833</item>
+        <item>1346</item>
+        <item>2400</item>
+        <item>170</item>
+        <item>370</item>
+        <item>1000</item>
+        <item>1300</item>
+        <item>1500</item>
+        <item>1420</item>
+        <item>1720</item>
+        <item>910</item>
+        <item>690</item>
+        <item>481</item>
+        <item>2550</item>
+        <item>2640</item>
+        <item>1682</item>
+        <item>595</item>
+
+        <!-- fourth -->
+        <item>920</item>
+        <item>1200</item>
+        <item>1400</item>
+        <item>1400</item>
+        <item>1500</item>
+        <item>945</item>
+        <item>2450</item>
+        <item>1250</item>
+        <item>2640</item>
+        <item>2162</item>
+        <item>400</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>1201</item>
+        <item>849</item>
+        <item>2250</item>
+        <item>1450</item>
+        <item>1600</item>
+        <item>1900</item>
+        <item>1500</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>721</item>
+        <item>1153</item>
+        <item>400</item>
+        <item>1314</item>
+        <item>605</item>
+        <item>350</item>
+        <item>870</item>
+        <item>69.44</item>
+        <item>700</item>
+        <item>550</item>
+        <item>1060</item>
+        <item>1100</item>
+        <item>530</item>
+
+        <!-- fifth -->
+        <item>800</item>
+        <item>755</item>
+        <item>78.125</item>
+        <item>81.02</item>
+        <item>83.912</item>
+        <item>530</item>
+        <item>460</item>
+        <item>450</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>675</item>
+        <item>950</item>
+        <item>70.89</item>
+        <item>630</item>
+        <item>950</item>
+        <item>420</item>
+
+    </string-array>
+
+    <string-array name="material_imperial_density_array">
+        <!-- first -->
+        <item>29.73</item>
+        <item>22.23</item>
+        <item>22.26</item>
+        <item>23.36</item>
+        <item>28.83</item>
+        <item>28.60</item>
+        <item>24.72</item>
+        <item>16.96</item>
+        <item>27.07</item>
+        <item>44.15</item>
+        <item>41.82</item>
+        <item>46.98</item>
+        <item>26.16</item>
+        <item>24.72</item>
+        <item>25.06</item>
+        <item>16.14</item>
+        <item>20.50</item>
+        <item>23.16</item>
+        <item>26.31</item>
+        <item>13.14</item>
+        <item>22.40</item>
+        <item>25.77</item>
+        <item>29.31</item>
+        <item>24.35</item>
+        <item>32.28</item>
+
+        <!-- second -->
+        <item>20.87</item>
+        <item>16.51</item>
+        <item>29.02</item>
+        <item>35.40</item>
+        <item>52.07</item>
+        <item>26.05</item>
+        <item>28.32</item>
+        <item>75.61</item>
+        <item>236.45</item>
+        <item>230.78</item>
+        <item>200.20</item>
+        <item>247.77</item>
+        <item>244.37</item>
+        <item>547.08</item>
+        <item>314.32</item>
+        <item>49.27</item>
+        <item>384.83</item>
+        <item>249.19</item>
+        <item>605.98</item>
+        <item>560.67</item>
+        <item>297.04</item>
+        <item>217.76</item>
+        <item>206.15</item>
+        <item>127.43</item>
+        <item>555.01</item>
+
+        <!-- third -->
+        <item>535.19</item>
+        <item>155.57</item>
+        <item>198.22</item>
+        <item>41.06</item>
+        <item>49.55</item>
+        <item>50.97</item>
+        <item>59.47</item>
+        <item>43.81</item>
+        <item>10.19</item>
+        <item>60.03</item>
+        <item>33.98</item>
+        <item>19.51</item>
+        <item>54.42</item>
+        <item>42.65</item>
+        <item>30.84</item>
+        <item>51.71</item>
+        <item>23.59</item>
+        <item>38.11</item>
+        <item>67.96</item>
+        <item>4.81</item>
+        <item>10.48</item>
+        <item>28.32</item>
+        <item>36.81</item>
+        <item>42.48</item>
+        <item>40.21</item>
+        <item>48.70</item>
+        <item>25.77</item>
+        <item>19.54</item>
+        <item>13.62</item>
+        <item>72.21</item>
+        <item>74.76</item>
+        <item>47.63</item>
+        <item>16.85</item>
+
+        <!-- fourth -->
+        <item>26.05</item>
+        <item>33.98</item>
+        <item>39.64</item>
+        <item>39.64</item>
+        <item>42.48</item>        
+        <item>26.76</item>
+        <item>69.38</item>
+        <item>35.40</item>
+        <item>74.76</item>
+        <item>61.22</item>
+        <item>11.33</item>
+        <item>8.50</item>
+        <item>8.50</item>
+        <item>8.50</item>
+        <item>8.50</item>
+        <item>34.01</item>        
+        <item>24.04</item>
+        <item>63.71</item>
+        <item>41.06</item>
+        <item>45.31</item>
+        <item>53.80</item>
+        <item>42.48</item>
+        <item>36.81</item>
+        <item>39.64</item>
+        <item>20.42</item>
+        <item>32.65</item>
+        <item>11.33</item>
+        <item>37.21</item>
+        <item>17.13</item>
+        <item>9.91</item>
+        <item>24.64</item>
+        <item>1.97</item>
+        <item>19.82</item>
+        <item>15.57</item>
+        <item>30.02</item>
+        <item>31.15</item>
+        <item>15.01</item>
+
+        <!-- fifth -->
+        <item>22.65</item>
+        <item>21.38</item>
+        <item>2.21</item>
+        <item>2.29</item>
+        <item>2.38</item>
+        <item>15.01</item>
+        <item>13.03</item>
+        <item>12.74</item>
+        <item>28.32</item>
+        <item>28.32</item>
+        <item>19.11</item>
+        <item>26.90</item>
+        <item>2.01</item>
+        <item>17.84</item>
+        <item>26.90</item>
+        <item>11.89</item>
+    </string-array>
+
+    <string-array name="cubic_name_array">
+        <item>Shape - Angle</item>
+        <item>Shape - Channel</item>
+        <item>Shape - Cone</item>
+        <item>Shape - Cube</item>
+        <item>Shape - Cylinder</item>
+        <item>Shape - Hexagonal Prism</item>
+        <item>Shape - I - Beam</item>
+        <item>Shape - Rectangle Tube</item>
+        <item>Shape - Round Tube</item>
+        <item>Shape - Sphere</item>
+        <item>Shape - Square Based Pyramid</item>
+        <item>Shape - Square Tube</item>
+        <item>Shape - Tee - Beam</item>
+    </string-array>
+
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="length">Length</string>
+    <string name="gauge">Gauge</string>
+    <string name="radius">Radius</string>
+    <string name="diameter">Diameter</string>
+    <string name="side">Side</string>
+
+    <string name="meters">Metres</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+
+    <string name="total_volume">Total Volume</string>
+    <string name="weight">Weight</string>
+    <string name="m3">M&#179;</string>
+    <string name="tone">tones</string>
+    <string name="stone">stone</string>
+    <string name="kilo">Kilos</string>
+    <string name="pound">pounds</string>
+    <string name="ounce">ounces</string>
+
+</resources>

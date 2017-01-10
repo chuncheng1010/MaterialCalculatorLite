@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "650609818110",
+    "firebase_url": "https://material-weight.firebaseio.com",
+    "project_id": "material-weight",
+    "storage_bucket": "material-weight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650609818110:android:2bd6a40fae9d1c3d",
+        "android_client_info": {
+          "package_name": "com.project.material"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650609818110-kktt9o5fekojshhfqf918j3mevlviemp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAopNfTX5tTcroUfaLPJLGJGzNhaqUw9IY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

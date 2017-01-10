@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:background="@color/White"
+        android:paddingTop="1.0dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10.0dp"
+        android:layout_weight="1.0" />
+    </LinearLayout>
+    <include layout="@layout/action_bar" />
+    <include
+        layout="@layout/google_ad_banner"/>
+</RelativeLayout>
